@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Travel Poland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    
+<header class="header">
+    <a href="#" id="logo">Travel <span>Poland</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#wea">weather</a>
+        <a href="#des">destination</a>
+        <a href="#mealss">meals</a>
+    </nav>
+<div class="icons">
+    <a href="#" id="menu-bars" class="fas fa-bars"></a>
+</div>
+</header>
+
+<!-- background image -->
+
+<div class="background-image">
+  <h5><span>POLAND</span></h5>
+  <p1>Poland, officially the Republic of Poland, is a country in Central Europe. It is divided into 16 administrative provinces called voivodeships, covering an area of 312,696 km². Poland has a population of 38 million and is the fifth-most populous member state of the European Union</p1>
+</div>
+
+
+<br>
+<div class="weather" id="wea"> 
+  <h1> <span>Weather</span></h1>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Weather App</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Select location:</td>
+        <td>
+          <select id="location">
+            <option value="">-- Select location --</option>
+            <option value="Warsaw,PL">Warsaw</option>
+            <option value="Krakow,PL">Krakow</option>
+            <option value="Lodz,PL">Lodz</option>
+            <option value="Wroclaw,PL">Wroclaw</option>
+            <option value="Poznan,PL">Poznan</option>
+            <option value="Gdansk,PL">Gdansk</option>
+            <option value="Szczecin,PL">Szczecin</option>
+            <option value="Bydgoszcz,PL">Bydgoszcz</option>
+            <option value="Lublin,PL">Lublin</option>
+            <option value="Katowice,PL">Katowice</option>
+            <option value="Bialystok,PL">Bialystok</option>
+            <option value="Gdynia,PL">Gdynia</option>
+            <option value="Czestochowa,PL">Czestochowa</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="button" onclick="searchWeather()">Search</button></td>
+      </tr>
+      <tr>
+        <td>Location:</td>
+        <td><span id="city"></span></td>
+      </tr>
+      <tr>
+        <td>Temperature:</td>
+        <td><span id="temp"></span></td>
+      </tr>
+      <tr>
+        <td>Wind:</td>
+        <td><span id="wind"></span></td>
+      </tr>
+      <tr>
+        <td>Humidity:</td>
+        <td><span id="humidity"></span></td>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td><span id="name"></span></td>
+      </tr>
+      <tr>
+        <td>Weather:</td>
+        <td><span id="weather"></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Destinations -->
+<div class="recomended-destination" id="des" >
+  <h1>recomended <span>destination</span></h1>
+<div class="main-destination">
+
+<div class="inner-destination">
+  <div class="main-image">
+      <img src="images/img1.jpg" alt="">
+  </div>
+  
+  <h2>HISTORIC CENTER OF KRAKÓW</h2>
+  <p>Cracow is home to Europe's largest Medieval market square, Church of the Holy Mary, Wawel Cathedral, Collegium Maius, Barbican, St Florian's Gate, Jewish quarter of Kazimierz, Jewish Culture Festival, Benedictine Abbey, and other cultural events..</p>
+  <br>
+  <div class="dist-icons">
+      <img src="images/icon1.png" alt="">
+      <img src="images/icon2.png" alt="">
+      <img src="images/icon3.png" alt="">
+  </div>
+</div>
+
+<div class="inner-destination">
+  <div class="main-image">
+      <img src="images/img2.png" alt="">
+  </div>
+  <h2>OLD CITY OF ZAMOŚĆ</h2>
+  <p>The historic center of Warsaw is an exception on UNESCO's World Cultural Heritage List due to its reconstruction after WWII destruction.</p><br>
+  <br><div class="dist-icons">
+      <img src="images/icon1.png" alt="">
+      <img src="images/icon2.png" alt="">
+      <img src="images/icon3.png" alt="">
+  </div>
+</div>
+
+<div class="inner-destination">
+  <div class="main-image">
+      <img src="images/img3.png" alt="">
+  </div>
+  <h2>HISTORIC CENTRE OF WARSAW</h2>
+  <p>Jan Sariusz Zamoyski, the Great Chancellor of the Crown, magnate and magistrate, was able to build Nowy Zamość with the help of Bernardo Mornado, an Italian architect who had been working in Poland since 1569..</p>
+  <br>
+  <div class="dist-icons">
+      <img src="images/icon1.png" alt="">
+      <img src="images/icon2.png" alt="">
+      <img src="images/icon3.png" alt="">
+  </div>
+</div>
+
+<div class="inner-destination">
+  <div class="main-image">
+      <img src="images/img4.png" alt="">
+  </div>
+  <h2>CZOCHA CASTLE</h2>
+  <p>The castle was designed as a fortress in the 13th century and restored to its former glory after centuries of political turbulence. Nowadays, it is home to an elegant hotel, Knights' tournaments, dance shows, comedy acts and concerts, as well as a stylish café and a restaurant specialising in Polish cuisine.</p><br>
+  <div class="dist-icons">
+      <img src="images/icon1.png" alt="">
+      <img src="images/icon2.png" alt="">
+      <img src="images/icon3.png" alt="">
+  </div>
+</div>
+
+<div class="inner-destination">
+  <div class="main-image">
+      <img src="images/img5.png" alt="">
+  </div>
+  <h2>MAŁOPOLSKA PROVINCE</h2>
+  <p>Małopolska Province is home to some of Poland's most visited sites.</p><br>
+  <div class="dist-icons">
+      <img src="images/icon1.png" alt="">
+      <img src="images/icon2.png" alt="">
+      <img src="images/icon3.png" alt="">
+  </div>
+</div>
+
+<div class="inner-destination">
+  <div class="main-image">
+      <img src="images/img6.png" alt="">
+  </div>
+  <h2>ŁÓDŹ: CITY OF FILM AND FASHION</h2>
+  <p>Łódź flourished during the 19th and 20th centuries due to investments and labor of Jews, Germans, Russians, and Poles.</p><br>
+  <div class="dist-icons">
+      <img src="images/icon1.png" alt="">
+      <img src="images/icon2.png" alt="">
+      <img src="images/icon3.png" alt="">
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Destinations ended -->
+
+<div class="recomended-destination" id="mealss">
+  <h1>Polish <span>Meals</span></h1>
+  <div class="meals">
+  
+    <div class="meal-info">
+      <img src="" alt="" id="mealImage">
+      <div class="meal-description">
+        <h3 id="mealName"></h3>
+        <p id="mealDescription"></p>  <br>
+        <ul id="mealIngredients"></ul>
+    </div>
+  </div>
+
+  <section id="meals"></section>
+  
+
+<script src="script.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+<!-- footer section starts  -->
+<br><br><br><br><br><br><br>
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>quick links</h3>
+    <ul>
+      <a href="index.html">home</a>
+      <a href="#wea">weather</a>
+      <a href="#des">destination</a>
+      <a href="#mealss">meals</a>
+    </ul>
+      </div>
+
+      <div class="box">
+          <h3>extra links</h3>
+    <ul>
+      <a href="#"><li>my account</li></a>
+      <a href="#"><li>my order</li></a>
+      <a href="#"><li>my favorite</li></a>
+    </ul>
+      </div>
+
+      <div class="box">
+          <h3>locations</h3>
+    <ul>
+      <a href="#"><li>Semenyih</li></a>
+      <a href="#"><li>Klang</li></a>
+      <a href="#"><li>Shah Alam</li></a>
+      <a href="#"><li>Petaling Jaya</li></a>
+    </ul>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+      <ul>
+        <a href="#"><li>+6011-60888021</li></a>
+        <a href="#"><li>muhdrafizi08@gmail.com</li></a>
+        <a href="#"><li>selangor, malaysia</li></a>
+      </ul> 
+      </div>
+
+  </div>
+
+  <div class="credit"> created by <span> rafizi ramadhan </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
